@@ -35,10 +35,10 @@
 
   }
   @media (max-width: 768px) {
-  .container-products {
+  /* .container-products {
        height: 300px;
       
-    }
+    } */
     .banner-content h2 {
        font-size: 1.5em;
     }

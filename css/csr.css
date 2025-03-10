@@ -6,7 +6,12 @@
     --relin-darkGreen: #01573C;
 }
 
+.smooth-scroll {
+    overflow: hidden;
+}
+
 .csr-hero {
+    height: 100vh;
     position: relative;
     min-height: 80vh;
     display: flex;
@@ -43,12 +48,27 @@
 }
 
 .csr-hero .container {
+    /* margin-top: 100px; */
     position: relative;
     z-index: 3;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+
+.scroll-down{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    font-size: 1.2rem;
+    font-weight: bold;
+    animation: bounce 1.5s infinite;
+    color: var(--relin-White);
+    text-decoration: none;
+    z-index: 3;
 }
 
 .csr-hero-content {
