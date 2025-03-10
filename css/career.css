@@ -1,0 +1,250 @@
+
+
+@font-face {
+    font-family:myFont;
+    src: url("../font/ABCFavoritVariable.woff2");
+}
+
+:root{
+    --relin-lightGreen: #6FBE84;
+    --relin-White: white;
+    --relin-darkGreen: #01573C;
+}
+
+body {
+    margin: 0;
+    font-family: myFont, sans-serif;
+    
+    color: white;
+    overflow-x: hidden;
+}
+.container3 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/assets/img23.jpeg') no-repeat center center/cover;
+    filter: brightness(30%);
+}
+.content {
+    position: relative;
+    z-index: 2;
+    color: var(--relin-White);
+}
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+}
+p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 10px auto;
+    /* color: #6FBE84; */
+    
+}
+.stats {
+    display: flex;
+    gap: 10px;
+    margin-top: 50px;
+}
+.stat {
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+.stat:hover {
+    transform: translateY(-10px);
+}
+.scroll-down {
+    position: absolute;
+    bottom: 20px;
+    /* left: 50%; */
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    font-weight: bold;
+    animation: bounce 1.5s infinite;
+    color: var(--relin-White);
+    text-decoration: none;
+}
+.number{
+    font-size: 3rem;
+    color: var(--relin-lightGreen);
+    font-weight: 800;
+}
+.description{
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.career-tag {
+    display: inline-block;
+    padding: 5px 15px;
+    background: rgb(243, 237, 237);
+    color: var(--relin-darkGreen);
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    p {
+        font-size: 1rem;
+        max-width: 90%;
+    }
+    .stats {
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .stat {
+        font-size: 1.2rem;
+    }
+    .number {
+        font-size: 2.5rem;
+    }
+    .description {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (max-width: 510px) {
+    .number {
+        font-size: 2rem;
+    }
+    .description {
+        font-size: 1rem;
+    }
+}
+
+
+/* form design */
+
+.career-form{
+    /* background-color: #0c3b63; */
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.job-form-container3 {
+    margin-top: 50px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.job-form-title {
+    font-size: 1.8rem;
+    color: #0c3b63;
+    margin-bottom: 20px;
+}
+
+.job-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.job-input,
+.job-textarea {
+    width: 97%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.job-textarea {
+    height: 80px;
+    resize: none;
+}
+
+.job-file-upload {
+    width: 101%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+.job-file-input {
+    display: none;
+}
+
+.job-file-label {
+    background: var(--relin-lightGreen);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.job-form-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.job-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    width: 48%;
+}
+
+.job-reset {
+    background: var(--relin-lightGreen);
+    color: #fff;
+}
+
+.job-submit {
+    background: #0c3b63;
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .job-btn {
+        width: 100%;
+    }
+}
