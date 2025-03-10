@@ -11,11 +11,118 @@
 
     <link rel="stylesheet" href="/css/product.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style2.css">
+    <script src="https://kit.fontawesome.com/YOUR_FA_KIT.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body data-scroll-container>
     <!-- Header Section -->
+    <header class="header" id="header">
+        <nav class="navbar ">
+            <!-- container -->
+            <section class="navbar-left">
+                <a href="#" class="brand">Ralin</a>
+                <!-- <div class="burger" id="burger">
+         <span class="burger-line"></span>
+         <span class="burger-line"></span>
+         <span class="burger-line"></span>
+      </div> -->
+            </section>
+            <section class="navbar-center">
+                <span class="overlay-2"></span>
+                <div class="menu" id="menu">
+                    <div class="menu-header">
+                        <span class="menu-arrow"><i class="bx bx-chevron-left"></i></span>
+                        <span class="menu-title"></span>
+                    </div>
+                    <ul class="menu-inner">
+                        <li class="menu-item"><a href="/index.html" class="menu-link">Home</a></li>
+                        <li class="menu-item menu-dropdown">
+                            <span class="menu-link">Products<i class="bx bx-chevron-right"></i></span>
+                            <div class="submenu megamenu megamenu-column-4">
+                                <div class="submenu-inner">
+                                    <a href="#" class="submenu-link navCategories">
+                                        <div class="Category1 my-2">Category1</div>
+                                        <div class="Category2 my-2">Category2</div>
+                                        <div class="Category3 my-2">Category3</div>
+                                        <div class="Category4 my-2">Category4</div>
+                                    </a>
+                                </div>
+                                <div class="submenu-inner">
+                                    <a href="#" class="submenu-link">
+                                        <img src="https://i.ibb.co/kgNX8ks/Product-2.jpg" class="submenu-image"
+                                            alt="Product">
+                                        <span class="submenu-title">Product Name</span>
+                                    </a>
+                                </div>
+                                <div class="submenu-inner">
+                                    <a href="#" class="submenu-link">
+                                        <img src="https://i.ibb.co/ZTD2wF6/Product-3.jpg" class="submenu-image"
+                                            alt="Product">
+                                        <span class="submenu-title">Product Name</span>
+                                    </a>
+                                </div>
+                                <div class="submenu-inner">
+                                    <a href="#" class="submenu-link">
+                                        <img src="https://i.ibb.co/prb0Vz9/Product-4.jpg" class="submenu-image"
+                                            alt="Product">
+                                        <span class="submenu-title">Product Name</span>
+                                    </a>
+                                </div>
+                                <div class="submenu-inner">
+                                    <a href="#" class="submenu-link">
+                                        <img src="https://i.ibb.co/zPJm9jy/Product-5.jpg" class="submenu-image"
+                                            alt="Product">
+                                        <span class="submenu-title">Product Name</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/about.html" class="menu-link">About Us</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/infrastructure.html" class="menu-link">Infrastructure</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/csrAndSustainability.html" class="menu-link">CSR & Sustainability</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/blogs.html" class="menu-link">Blogs</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/career.html" class="menu-link">Career</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">contact & Enquiry</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="navbar-right">
+                <button class="switch" id="switch">
+                </button>
+            </section>
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+        </nav>
+    </header>
    
     <!-- header end -->
 
@@ -35,12 +142,13 @@
                 
                 <a href="" class="hero-btn">Discover</a>
               
-            <div class="scroll-indicator">
+            <!-- <div class="scroll-indicator">
                 <span>Scroll to Explore</span>
                 <i class="fas fa-chevron-down"></i>
-            </div>
+            </div> -->
         </div>
     </div>
+    <a href="#blogSection" class="scroll-down-2 sd-2">↓ Scroll Down</a>
 </section>
 
 <!-- Products Display Section -->
@@ -198,6 +306,123 @@
         </div>
     </div>
 </section>
+
+<footer class="footerSection footer-section" data-scroll-section>
+    <div class="container container-2">
+        <div class="footer-cta pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-md-4 mb-30 py-1">
+                    <div style="display: flex" class="single-cta">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="cta-text">
+                            <h4>Find us</h4>
+                            <span>1010 Avenue, sw 54321, chandigarh</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30 py-1">
+                    <div style="display: flex" class="single-cta">
+                        <i class="fas fa-phone"></i>
+                        <div class="cta-text">
+                            <h4>Call us</h4>
+                            <span>9876543210 0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30 py-1">
+                    <div style="display: flex" class="single-cta">
+                        <i class="far fa-envelope-open"></i>
+                        <div class="cta-text">
+                            <h4>Mail us</h4>
+                            <span>mail@info.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 mb-50 py-3">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" class="img-fluid"
+                                    alt="logo"></a>
+                        </div>
+                        <div class="footer-text">
+                            <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor
+                                incididuntut consec tetur adipisicing
+                                elit,Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="footer-social-icon">
+                            <span>Follow us</span>
+                            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                            <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-30 py-3">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Useful Links</h3>
+                        </div>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">services</a></li>
+                            <li><a href="#">portfolio</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Expert Team</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Latest News</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-50 py-3">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Subscribe</h3>
+                        </div>
+                        <div class="footer-text mb-25">
+                            <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                        </div>
+                        <div class="subscribe-form">
+                            <form action="#">
+                                <input type="text" placeholder="Email Address">
+                                <button><i class="fab fa-telegram-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2018, All Right Reserved <a
+                                href="https://codepen.io/anupkumar92/">Anup</a></p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Policy</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
     
  <!-- Footer Section -->

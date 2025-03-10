@@ -24,6 +24,11 @@
 
 /* banner */
 
+
+.banner-section{
+    height: 100vh;
+}
+
 .container-products {
     display: flex;
     justify-content: center;
@@ -33,12 +38,43 @@
     background-position: center;
     /* object-fit: contain; */
     /* width: 100%; */
-    height: 400px;
+    height:100%;
     /* border-radius: 20% 20% 0 0; */
     color: white;
     text-align: center;
     padding: 20px;
   }
+
+
+
+  .scroll-down-contact{
+    width: 100%;
+    left: 0%;
+    position: absolute;
+    bottom: 20px;
+    display: block;
+    text-align: center;
+    margin: auto;
+    font-size: 1.2rem;
+    font-weight: bold;
+    animation: bounce 1.5s infinite;
+    color: var(--relin-White);
+    text-decoration: none;
+    z-index: 3;
+    /* animation: bounce 1.5s infinite; */
+  }
+  
+  
+  @keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+  }
+
+
  
 .main-content {
     position: relative;
@@ -965,4 +1001,11 @@ html.has-scroll-smooth {
 }
 
 
+.contact-send-btn{
+ background-color: var(--relin-darkGreen) !important;
+ color: var(--relin-white) !important;
+}
 
+.contact-send-btn i{
+    color: var(--relin-white) !important;
+}
