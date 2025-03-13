@@ -1,0 +1,20 @@
+/* html, body {
+    overflow: hidden;
+    touch-action: none;
+}
+
+[data-scroll-container] {
+    will-change: transform;
+} */
+[data-scroll-container] {
+    min-height: 100vh; /* Ensure scrolling */
+    will-change: transform;
+}
+
+html.has-scroll-smooth {
+    overflow: hidden; /* Locomotive Scroll के लिए */
+}
+
+html.has-scroll-dragging {
+    user-select: none;
+}

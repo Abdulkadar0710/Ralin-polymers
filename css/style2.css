@@ -1,5 +1,10 @@
 @media (max-width: 992px){
 
+    
+    #testimonial4{
+        left: 60%;
+      }
+
     /* #products{
      height: auto;
     }
@@ -121,6 +126,16 @@
 
 @media (max-width: 768px){
 
+    .card-narrow, .card-narrow-image, .card-narrow-content{
+        width: 80vw;
+        height: auto !important;
+     } 
+
+
+     .card-narrow-image img{
+        height: 300px !important;
+     }
+
 
     .swiperSection{
         padding-inline: 20px;
@@ -188,7 +203,42 @@
         padding-right: 0px;
         text-align: justify;
       }
+      #testimonial4{
+        left: 60%;
+      }
 
+
+      .blog-text{
+        padding: 10px;
+      }
+
+      .blog-heading{
+        width: 100%;
+      }
+
+      .blog-p{
+        width: 100%;
+      }
 
 
 }
+
+
+
+@media (max-width: 450px){
+
+    .card-narrow, .card-narrow-image, .card-narrow-content{
+        width: 90vw;
+        height: auto !important;
+     } 
+
+
+     .card-narrow-image img{
+        height: 250px !important;
+     }
+     #testimonial4{
+        left: 65%;
+      }
+     
+
+    }

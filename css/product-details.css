@@ -1,0 +1,249 @@
+@font-face {
+  font-family: myfont;
+  src: url(../font/ABCFavoritVariable.woff2);
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+*{
+  font-family: myfont;
+}
+.banner-section {
+  width: 100%;
+  height: 100vh;
+}
+:root{
+  --relin-lightGreen: #6FBE84;
+  --relin-White: white;
+  --relin-darkGreen: #01573C;
+}
+.hero-tag {
+  display: inline-block;
+  background-color: rgba(111, 190, 132, 0.2);
+
+  color: var(--relin-lightGreen);
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 24px;
+  backdrop-filter: blur(5px);
+}
+.container-products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://media.istockphoto.com/id/1411289606/photo/paper-eco-friendly-disposable-tableware-with-recycling-signs-on-the-background-of-green-plants.jpg?s=612x612&w=0&k=20&c=ng731oZuBvrja5tNFkrcW-hWtWJqieyxw3A2HSei0QI=);
+  background-size: cover;
+  background-position: center;
+  /* width: 100%; */
+  height: 100%;
+  /* border-radius: 20% 20% 0 0; */
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.content {
+  max-width: 600px;
+}
+.content h1 {
+  font-size: 3em;
+  margin-top: 10px;
+}
+.content p {
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+@media (max-width: 768px) {
+  /* .container-products {
+     height: 300px;
+  } */
+
+  .content h1 {
+    font-size: 2em;
+    margin-top: 10px;
+  }
+
+
+  .content h2 {
+     font-size: 1.5em;
+  }
+  .content p {
+     font-size: 1em;
+  }
+}
+
+/* product-section */
+
+
+
+/* Product section styling */
+.product-section {
+  margin-top: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Product Container */
+.product-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: white;
+  border-radius: 10px;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
+  overflow: hidden;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Product Image */
+.product-image {
+  
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.product-image img {
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+/* Product Content */
+.product-content {
+  /* position: relative; */
+  flex: 1;
+  padding: 30px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+.scroll-down {
+  /* position: absolute; */
+  bottom: 0;
+  /* left: 50%; */
+  transform: translateX(-5%);
+  transform: translateY(-10%);
+  font-size: 1.2rem;
+  font-weight: bold;
+  animation: bounce 1.5s infinite;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .product-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .product-image img {
+      max-width: 100%;
+  }
+
+  .product-content {
+      padding: 20px;
+      font-size: 16px;
+  }
+}
+
+/* product-slider */
+
+
+.product-slider {
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.carousel {
+  position: relative;
+  width: 80%;
+  max-width: 1200px;
+  overflow: hidden;
+}
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.carousel-item {
+  flex: 0 0 33.33%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  height: 70vh;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card img {
+  width: 100%;
+  height: 250px;
+  border: 1px solid var(--relin-darkGreen);
+  border-radius: 10px;
+}
+/* .card img:hover{
+  border: 1px solid var(--relin-darkGreen);
+  border-radius: 10px;
+} */
+.btn {
+  background-color: lightblue;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+.prev { left: 10px; }
+.next { right: 10px; }
+.card p{
+  font-size: 1.4rem;
+}
+@media (max-width: 768px) {
+  .carousel-item {
+      flex: 0 0 100%;
+  }
+}
+
+
+.product-btn {
+  display: inline-block;
+  background-color: transparent;
+  color: var(--relin-darkGreen);
+  border: 1px solid var(--relin-darkGreen);
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.product-btn:hover{
+  background-color: #01573C;
+  color: white;
+}

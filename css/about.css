@@ -1,9 +1,9 @@
 /* about section */
 
 /* Locomotive Scroll styles */
-html.has-scroll-smooth {
+/* html.has-scroll-smooth {
     overflow: hidden;
-}
+} */
 
 
 @font-face {
@@ -28,7 +28,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img27.jpeg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img27.jpeg);
     background-size: cover;
     background-position: center;
     /* object-fit: contain; */

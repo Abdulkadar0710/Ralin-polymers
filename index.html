@@ -4,13 +4,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Home - Ralin Polymers</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/style2.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/locomotive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css"> 
     <link
         href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Sigmar&family=Sixtyfour+Convergence&display=swap"
         rel="stylesheet">
@@ -25,71 +27,14 @@
 </head>
 
 
-<body>
+<body data-scroll-container>
 
-    <!-- <nav class="navbar">
-        <a href="/index.html" class="logo">
-            <img src="./assets/log.png" alt="">
-        </a>
-        <ul id="nav_items" class="nav_items">
-            <li class="crossCategories"><i id="crossCategoriesIcon" class="fa-solid fa-xmark fa-2xl"></i></li>
-            <li id="products">Products <i id="dropDowon-icon" class="fa-solid fa-caret-down dropDowon-icon"></i>
-                <div id="productCategoriesContainer" class="productCategoriesContainer">
-                    <div id="navProductCardsContainer" class="navProductCardsContainer">
-                        <div class="navProductCards navProductCards1">
-                            <ul id="productCategories">
-                                <li>Category1</li>
-                                <li>Category2</li>
-                                <li>Category3</li>
-                                <li>Category4</li>
-                            </ul>
-                        </div>
-                        <div class="navProductCards">
-                            <img class="navProductCardsImage" src="./assets/img5.jpeg" alt="can't load image">
-                            <div class="navProductCardsContent">
-                                <div class="navProductCardsContentName">My Name</div>
-                                <div class="navProductCardsContentDescription">My Description</div>
-                            </div>
-                        </div>
-                        <div class="navProductCards">
-                            <img class="navProductCardsImage" src="./assets/img6.jpeg" alt="can't load image">
-                            <div class="navProductCardsContent">
-                                <div class="navProductCardsContentName">My Name</div>
-                                <div class="navProductCardsContentDescription">My Description</div>
-                            </div>
-                        </div>
-                        <div class="navProductCards">
-                            <img class="navProductCardsImage" src="./assets/img7.jpeg" alt="can't load image">
-                            <div class="navProductCardsContent">
-                                <div class="navProductCardsContentName">My Name</div>
-                                <div class="navProductCardsContentDescription">My Description</div>
-                            </div>
-                        </div>
-                        <div class="navProductCards">
-                            <img class="navProductCardsImage" src="./assets/img8.jpeg" alt="can't load image">
-                            <div class="navProductCardsContent">
-                                <div class="navProductCardsContentName">My Name</div>
-                                <div class="navProductCardsContentDescription">My Description</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>About Us</li>
-            <li>Infrastructure</li>
-            <li>CSR & Sustainability</li>
-            <li><a href="/blogs.html">Blogs</a></li>
-            <li>Career</li>
-            <li>contact & Enquiry</li>
-        </ul>
-        <div id="hamburger" class="hamburger"><i class="fa-solid fa-bars fa-2xl hamburger-icon"></i></div>
-    </nav> -->
-   
-    <header class="header" id="header">
+
+    <header class="header" id="header" >
         <nav class="navbar ">
             <!-- container -->
-           <section class="navbar-left">
-              <a href="#" class="brand">Ralin</a>
+           <section class="navbar-left" >
+            <a href="index.html" class="brand"><img src="assets/logo.png" alt=""  width="150px" height="150px" style="padding: 20px;"/></a>
               <!-- <div class="burger" id="burger">
                  <span class="burger-line"></span>
                  <span class="burger-line"></span>
@@ -104,9 +49,9 @@
                     <span class="menu-title"></span>
                  </div>
                  <ul class="menu-inner">
-                    <li class="menu-item"><a href="/index.html" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="index.html" class="menu-link">Home</a></li>
                     <li class="menu-item menu-dropdown">
-                       <span class="menu-link">Products<i class="bx bx-chevron-right"></i></span>
+                       <span class="menu-link"><a  href="product.html" class="menu-link"  >Products </a><i class="bx bx-chevron-right"></i></span>
                        <div class="submenu megamenu megamenu-column-4">
                         <div class="submenu-inner submenu-inner-navCategories">
                             <a href="#" class="submenu-link navCategories">
@@ -117,25 +62,25 @@
                             </a>
                          </div>
                           <div class="submenu-inner">
-                             <a href="#" class="submenu-link">
+                             <a href="product.html" class="submenu-link">
                                 <img src="https://i.ibb.co/kgNX8ks/Product-2.jpg" class="submenu-image" alt="Product">
                                 <span class="submenu-title">Product1</span>
                              </a>
                           </div>
                           <div class="submenu-inner">
-                             <a href="#" class="submenu-link">
+                             <a href="product.html" class="submenu-link">
                                 <img src="https://i.ibb.co/ZTD2wF6/Product-3.jpg" class="submenu-image" alt="Product">
                                 <span class="submenu-title">Product2</span>
                              </a>
                           </div>
                           <div class="submenu-inner">
-                             <a href="#" class="submenu-link">
+                             <a href="product.html" class="submenu-link">
                                 <img src="https://i.ibb.co/prb0Vz9/Product-4.jpg" class="submenu-image" alt="Product">
                                 <span class="submenu-title">Product3</span>
                             </a>
                           </div>
                           <div class="submenu-inner">
-                             <a href="#" class="submenu-link">
+                             <a href="product.html" class="submenu-link">
                                 <img src="https://i.ibb.co/zPJm9jy/Product-5.jpg" class="submenu-image" alt="Product">
                                 <span class="submenu-title">Product4</span>
                              </a>
@@ -143,22 +88,22 @@
                        </div>
                     </li>
                     <li class="menu-item">
-                        <a href="/about.html" class="menu-link">About Us</a>
+                        <a href="about.html" class="menu-link">About Us</a>
                     </li>
                     <li class="menu-item">
-                        <a href="/infrastructure.html" class="menu-link">Infrastructure</a>
+                        <a href="infrastructure.html" class="menu-link">Infrastructure</a>
                      </li> 
                      <li class="menu-item">
-                        <a href="/csrAndSustainability.html" class="menu-link">CSR & Sustainability</a>
+                        <a href="csrAndSustainability.html" class="menu-link">CSR & Sustainability</a>
                      </li>
                      <li class="menu-item">
-                        <a href="/blogs.html" class="menu-link">Blogs</a>
+                        <a href="blogs.html" class="menu-link">Blogs</a>
                      </li>
                      <li class="menu-item">
-                        <a href="/career.html" class="menu-link">Career</a>
+                        <a href="career.html" class="menu-link">Career</a>
                      </li>
                     <li class="menu-item">
-                        <a href="/contact.html" class="menu-link">contact & Enquiry</a>
+                        <a href="contact.html" class="menu-link">contact & Enquiry</a>
                     </li>
                  </ul> 
               </div>
@@ -176,84 +121,101 @@
     </header>
     
     <div class="wrapper">
-        <section class="heroSection">
+        <section class="heroSection" data-scroll-section="1">
+            <video autoplay muted loop id="bg-video">
+                <source src="assets/bg-video.mp4">
+            </video>
             <div class="heroSectionText">
                 <h1>Innovating Polymers, Shaping the Future.</h1>
-                 <h4>Discover high-performance polymers designed for durability and sustainability. Engineered for excellence, crafted for tomorrow.</h4>
+                 <p>Discover high-performance polymers designed for durability and sustainability. Engineered for excellence, crafted for tomorrow.</p>
             </div>
         </section>
 
-        <div class="swiperSection">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img class="swiperrPoductImg" src="/assets/img1.jpeg" alt="">
-                    <div class="swiperrPoductInfo">
-                        <h3>Product Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide"><img class="swiperrPoductImg" src="/assets/img1.jpeg" alt="">
-                    <div class="swiperrPoductInfo">
-                        <h3>Product Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                    </div></div>
-                  <div class="swiper-slide"><img class="swiperrPoductImg" src="/assets/img1.jpeg" alt="">
-                    <div class="swiperrPoductInfo">
-                        <h3>Product Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                    </div></div>
-                  <div class="swiper-slide"><img class="swiperrPoductImg" src="/assets/img1.jpeg" alt="">
-                    <div class="swiperrPoductInfo">
-                        <h3>Product Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                    </div></div>
-                  <div class="swiper-slide"><img class="swiperrPoductImg" src="/assets/img1.jpeg" alt="">
-                    <div class="swiperrPoductInfo">
-                        <h3>Product Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                    </div></div>
-                  <div class="swiper-slide"><img class="swiperrPoductImg" src="/assets/img1.jpeg" alt="">
-                    <div class="swiperrPoductInfo">
-                        <h3>Product Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                    </div></div>
-                  <div class="swiper-slide"><img class="swiperrPoductImg" src="/assets/img1.jpeg" alt="">
-                    <div class="swiperrPoductInfo">
-                        <h3>Product Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                    </div></div>
-                  <div class="swiper-slide"><img class="swiperrPoductImg" src="/assets/img1.jpeg" alt="">
-                    <div class="swiperrPoductInfo">
-                        <h3>Product Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                    </div></div>
-                  <div class="swiper-slide"><img class="swiperrPoductImg" src="/assets/img1.jpeg" alt="">
-                    <div class="swiperrPoductInfo">
-                        <h3>Product Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                    </div></div>
-                </div>
-                <div class="swiper-pagination"></div>
-              </div>
-        </div>
-
-        <section class="shortAboutUsSection">
+        <section class="shortAboutUsSection" data-scroll-section="0.5">
             <div class="shortAboutUsSectionImgDiv">
-            <img class="shortAboutUsSectionImg" src="./assets/img9.jpeg" alt="">
+            <img class="shortAboutUsSectionImg" src="assets/img9.jpeg" alt="">
             </div>
             <div class="shortAboutUsSectionP">
-               <h1>Industries we Serve</h1>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatum, commodi velit suscipit impedit dicta ipsa. Fugit quaerat voluptates temporibus natus, eos sunt facilis iusto dicta, impedit soluta nisi voluptatibus eius repudiandae dolores error harum animi voluptatum rerum quae? Cum ipsum quisquam modi suscipit voluptates quae aperiam corrupti maiores deserunt!</p> 
+               <h1>About us</h1>
+               <p>Established in 1996 with a modest capacity of 500 metric tons per year, Lincon Polymer - a leading PP woven & BOPP bags manufacturer has achieved exceptional growth and success in just two decades with a customer-centric approach. </p>
+
+                <p>Today, Lincon Polymer is the best polypropylene bags wholesaler, taking pride in its state-of-the-art manufacturing facility, covering an impressive 4,00,000 sq. ft. and boasting an installed capacity of 22,000 metric tons annually.</p> 
                <a class="shortAboutUsSectionPA" href="">More About Us <i class="fa-solid fa-right-to-bracket shortAboutUsSectionPAI"></i> <div class="linei"></div></a>
             </div>
         </section>
 
-        <section class="fourCardsSection">
+        <section class="counterSection" data-scroll-section="0.2">
+            <div class="heading-counter">
+                <h1 style="text-align: center; margin-top: 1rem; text-transform: uppercase; font-size: 2.5rem;">Our impact</h1>
+            </div>
+            <div id="counter">
+
+                <div class="item">
+                    <h1 class="count" data-number="50"></h1>
+                    <h3 class="text">Rewards Achieved</h3>
+                </div>
+                <div class="item">
+                    <h1 class="count" data-number="15"></h1>
+                    <h3 class="text">year+ Experience</h3>
+                </div>
+                <div class="item">
+                    <h1 class="count" data-number="54"></h1>
+                    <h3 class="text">project completed</h3>
+                </div>
+                <div class="item">
+                    <h1 class="count" data-number="101"></h1>
+                    <h3 class="text">happy clients</h3>
+                </div>
+
+            </div>
+        </section>
+     <section data-scroll-section> 
+        <div class="swiperSection">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img class="swiperrPoductImg" src="assets/img1.jpeg" alt="">
+                    <div class="swiperrPoductInfo">
+                        <h3>Garment bags</h3>
+                        <a href=""> view range</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiperrPoductImg" src="assets/img1.jpeg" alt="">
+                    <div class="swiperrPoductInfo">
+                        <h3>Labels & tape</h3>
+                        
+                        <a href=""> view range</a>
+                    </div></div>
+                  <div class="swiper-slide"><img class="swiperrPoductImg" src="assets/img1.jpeg" alt="">
+                    <div class="swiperrPoductInfo">
+                        <h3>garments bags</h3>
+                         <a href=""> view range</a>
+                    </div></div>
+                  <div class="swiper-slide"><img class="swiperrPoductImg" src="assets/img1.jpeg" alt="">
+                    <div class="swiperrPoductInfo">
+                        <h3>extra protection</h3>
+                         <a href=""> view range</a>
+                    </div></div>
+                  <div class="swiper-slide"><img class="swiperrPoductImg" src="assets/img1.jpeg" alt="">
+                    <div class="swiperrPoductInfo">
+                        <h3>malers & satchels</h3>
+                         <a href=""> view range</a>
+                    </div></div>
+                 >
+         
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </div>
+    </section>
+
+      
+
+        <!-- <section class="fourCardsSection" data-scroll-section="2">
             <div class="paragraph--type--card-narrow-row">
 
                 <div class="card-narrow">
-                    <div class="card-narrow-image"><img src="/assets/img5.jpeg" alt="clay pot with hand" /></div>
+                    <div class="card-narrow-image"><img src="assets/img5.jpeg" alt="clay pot with hand" /></div>
                     <div class="card-narrow-content">
                         <h3>Card Title</h3>
                         <p>Cookie fruitcake chocolate barn. Cookie fruitcake chocolate barn.</p>
@@ -261,7 +223,7 @@
                 </div>
 
                 <div class="card-narrow">
-                    <div class="card-narrow-image"><img src="/assets/img5.jpeg" alt="books" /></div>
+                    <div class="card-narrow-image"><img src="assets/img5.jpeg" alt="books" /></div>
                     <div class="card-narrow-content">
                         <h3>Card Title</h3>
                         <p>Cookie fruitcake chocolate barn. Cookie fruitcake chocolate barn.</p>
@@ -269,7 +231,7 @@
                 </div>
 
                 <div class="card-narrow">
-                    <div class="card-narrow-image"><img src="/assets/img5.jpeg" alt="toys" /></div>
+                    <div class="card-narrow-image"><img src="assets/img5.jpeg" alt="toys" /></div>
                     <div class="card-narrow-content">
                         <h3>Card Title</h3>
                         <p>Cookie fruitcake chocolate barn. Cookie fruitcake chocolate barn.</p>
@@ -277,7 +239,7 @@
                 </div>
 
                 <div class="card-narrow">
-                    <div class="card-narrow-image"><img src="/assets/img5.jpeg" alt="jersey shore" /></div>
+                    <div class="card-narrow-image"><img src="assets/img5.jpeg" alt="jersey shore" /></div>
                     <div class="card-narrow-content">
                         <h3>Card Title</h3>
                         <p>Cookie fruitcake chocolate barn. Cookie fruitcake chocolate barn.</p>
@@ -285,10 +247,10 @@
                 </div>
 
             </div>
-        </section>
+        </section> -->
 
 
-        <section class="marqueesSection">
+        <section class="marqueesSection" data-scroll-section="1">
             <div class="marqueescpa container flex-vertical">
                 <div class="flex-horizontal">
                     <div class="spacer-60"></div>
@@ -330,32 +292,11 @@
 
         </section>
 
-        <section class="counterSection">
-            <div id="counter">
+       
 
-                <div class="item">
-                    <h1 class="count" data-number="50"></h1>
-                    <h3 class="text">Rewards Achieved</h3>
-                </div>
-                <div class="item">
-                    <h1 class="count" data-number="15"></h1>
-                    <h3 class="text">year+ Experience</h3>
-                </div>
-                <div class="item">
-                    <h1 class="count" data-number="54"></h1>
-                    <h3 class="text">project completed</h3>
-                </div>
-                <div class="item">
-                    <h1 class="count" data-number="101"></h1>
-                    <h3 class="text">happy clients</h3>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="shortAboutUsSection">
+        <section class="shortAboutUsSection" data-scroll-section="0.1">
             <div class="shortAboutUsSectionImgDiv">
-            <img class="shortAboutUsSectionImg" src="./assets/img24.jpeg" alt="">
+            <img class="shortAboutUsSectionImg" src="assets/img24.jpeg" alt="">
             </div>
             <div class="shortAboutUsSectionP">
                <h1>Industries we Serve</h1>
@@ -368,7 +309,7 @@
             </div>
         </section> 
 
-        <section class="testimonialSection testimonial text-center">
+        <section class="testimonialSection testimonial text-center" data-scroll-section="1">
             <div class="container">
                 <div class="heading white-heading">Testimonial</div>
                 <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-bs-ride="carousel" data-bs-pause="hover" data-bs-interval="5000">
@@ -377,22 +318,22 @@
                         <div class="carousel-item active">
                             <div class="testimonial4_slide">
                                 <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" />
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                <h4>Client 1</h4>
+                                <p>"This service exceeded my expectations! The team was professional, and the experience was seamless."</p>
+                                <h4>John Doe</h4>
                             </div>
                         </div> 
                         <div class="carousel-item">
                             <div class="testimonial4_slide">
                                 <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" />
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                <h4>Client 2</h4>
+                                <p>"Amazing quality and fast support! I would highly recommend it to anyone looking for great service."</p>
+                                <h4>Jane Smith</h4>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="testimonial4_slide"> 
                                 <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" />
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                <h4>Client 3</h4>
+                                <p>"Absolutely loved the experience. The team went above and beyond to meet my needs."</p>
+                                <h4>Michael Johnson</h4>
                             </div>
                         </div>
                     </div>
@@ -407,130 +348,138 @@
                 </div>
             </div>
         </section>
+        
 
 
-        <footer class="footerSection footer-section">
-            <div class="container container-2">
-                <div class="footer-cta pt-5 pb-5">
-                    <div class="row">
-                        <div class="col-xl-4 col-md-4 mb-30 py-1">
-                            <div style="display: flex" class="single-cta">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <div class="cta-text">
-                                    <h4>Find us</h4>
-                                    <span>1010 Avenue, sw 54321, chandigarh</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-4 mb-30 py-1">
-                            <div style="display: flex" class="single-cta">
-                                <i class="fas fa-phone"></i>
-                                <div class="cta-text">
-                                    <h4>Call us</h4>
-                                    <span>9876543210 0</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-4 mb-30 py-1">
-                            <div style="display: flex" class="single-cta">
-                                <i class="far fa-envelope-open"></i>
-                                <div class="cta-text">
-                                    <h4>Mail us</h4>
-                                    <span>mail@info.com</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-content pt-5 pb-5">
-                    <div class="row">
-                        <div class="col-xl-4 col-lg-4 mb-50 py-3">
-                            <div class="footer-widget">
-                                <div class="footer-logo">
-                                    <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" class="img-fluid" alt="logo"></a>
-                                </div>
-                                <div class="footer-text">
-                                    <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
-                                    elit,Lorem ipsum dolor sit amet.</p>
-                                </div>
-                                <div class="footer-social-icon">
-                                    <span>Follow us</span>
-                                    <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                                    <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                                    <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 mb-30 py-3">
-                            <div class="footer-widget">
-                                <div class="footer-widget-heading">
-                                    <h3>Useful Links</h3>
-                                </div>
-                                <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">about</a></li>
-                                    <li><a href="#">services</a></li>
-                                    <li><a href="#">portfolio</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                    <li><a href="#">About us</a></li>
-                                    <li><a href="#">Our Services</a></li>
-                                    <li><a href="#">Expert Team</a></li>
-                                    <li><a href="#">Contact us</a></li>
-                                    <li><a href="#">Latest News</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 mb-50 py-3">
-                            <div class="footer-widget">
-                                <div class="footer-widget-heading">
-                                    <h3>Subscribe</h3>
-                                </div>
-                                <div class="footer-text mb-25">
-                                    <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
-                                </div>
-                                <div class="subscribe-form">
-                                    <form action="#">
-                                        <input type="text" placeholder="Email Address">
-                                        <button><i class="fab fa-telegram-plane"></i></button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="copyright-area">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                            <div class="copyright-text">
-                                <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                            <div class="footer-menu">
-                                <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">Terms</a></li>
-                                    <li><a href="#">Privacy</a></li>
-                                    <li><a href="#">Policy</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer> 
+     
         
 
     </div>
+
+    <section class="footer-sections" data-scroll-section="">
+    <footer class="footerSection footer-section"   >
+        <div class="container container-2">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30 py-1">
+                        <div style="display: flex" class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>1010 Avenue, sw 54321, chandigarh</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30 py-1">
+                        <div style="display: flex" class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>9876543210 0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30 py-1">
+                        <div style="display: flex" class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>mail@info.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50 py-3">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="assets/logo.png" class="img-fluid"
+                                        alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>Rilen Polymer is a trusted company specializing in the production of advanced polymer and plastic products. It focuses on quality, innovation, and durability, making it a distinguished name in the market. All Rilen Polymer products are reliable, eco-friendly, and suitable for both industrial and personal use.</p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30 py-3">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">services</a></li>
+                                <li><a href="#">portfolio</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Expert Team</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Latest News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50 py-3">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Email Address">
+                                    <button><i class="fab fa-telegram-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>© 2025 Ralin Polymers Pvt. Ltd. All rights reserved.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                               
+                                <li><a href="#">Terms and conditions</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+     <script src="js/locomotive.js"></script>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/8021a6a657.js" crossorigin="anonymous"></script>
-    <script src="./js/index.js"></script>
+    <script src="js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script>
@@ -557,6 +506,8 @@
         }
         });
     </script> 
+
+
 
 </body>
 

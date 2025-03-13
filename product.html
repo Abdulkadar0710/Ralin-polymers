@@ -17,9 +17,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="/css/about.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/style2.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/locomotive.css">
     <script src="https://kit.fontawesome.com/YOUR_FA_KIT.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -30,97 +31,93 @@
 
 <body data-scroll-container>
     <!-- Header Section -->
-    <header class="header" id="header">
+    <header class="header" id="header" >
         <nav class="navbar ">
             <!-- container -->
-            <section class="navbar-left">
-                <a href="#" class="brand">Ralin</a>
-                <!-- <div class="burger" id="burger">
-         <span class="burger-line"></span>
-         <span class="burger-line"></span>
-         <span class="burger-line"></span>
-      </div> -->
-            </section>
-            <section class="navbar-center">
-                <span class="overlay-2"></span>
-                <div class="menu" id="menu">
-                    <div class="menu-header">
-                        <span class="menu-arrow"><i class="bx bx-chevron-left"></i></span>
-                        <span class="menu-title"></span>
-                    </div>
-                    <ul class="menu-inner">
-                        <li class="menu-item"><a href="/index.html" class="menu-link">Home</a></li>
-                        <li class="menu-item menu-dropdown">
-                            <span class="menu-link">Products<i class="bx bx-chevron-right"></i></span>
-                            <div class="submenu megamenu megamenu-column-4">
-                                <div class="submenu-inner">
-                                    <a href="#" class="submenu-link navCategories">
-                                        <div class="Category1 my-2">Category1</div>
-                                        <div class="Category2 my-2">Category2</div>
-                                        <div class="Category3 my-2">Category3</div>
-                                        <div class="Category4 my-2">Category4</div>
-                                    </a>
-                                </div>
-                                <div class="submenu-inner">
-                                    <a href="#" class="submenu-link">
-                                        <img src="https://i.ibb.co/kgNX8ks/Product-2.jpg" class="submenu-image"
-                                            alt="Product">
-                                        <span class="submenu-title">Product Name</span>
-                                    </a>
-                                </div>
-                                <div class="submenu-inner">
-                                    <a href="#" class="submenu-link">
-                                        <img src="https://i.ibb.co/ZTD2wF6/Product-3.jpg" class="submenu-image"
-                                            alt="Product">
-                                        <span class="submenu-title">Product Name</span>
-                                    </a>
-                                </div>
-                                <div class="submenu-inner">
-                                    <a href="#" class="submenu-link">
-                                        <img src="https://i.ibb.co/prb0Vz9/Product-4.jpg" class="submenu-image"
-                                            alt="Product">
-                                        <span class="submenu-title">Product Name</span>
-                                    </a>
-                                </div>
-                                <div class="submenu-inner">
-                                    <a href="#" class="submenu-link">
-                                        <img src="https://i.ibb.co/zPJm9jy/Product-5.jpg" class="submenu-image"
-                                            alt="Product">
-                                        <span class="submenu-title">Product Name</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/about.html" class="menu-link">About Us</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/infrastructure.html" class="menu-link">Infrastructure</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/csrAndSustainability.html" class="menu-link">CSR & Sustainability</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/blogs.html" class="menu-link">Blogs</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/career.html" class="menu-link">Career</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#" class="menu-link">contact & Enquiry</a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="navbar-right">
-                <button class="switch" id="switch">
-                </button>
-            </section>
-            <div class="burger" id="burger">
-                <span class="burger-line"></span>
-                <span class="burger-line"></span>
-                <span class="burger-line"></span>
-            </div>
+           <section class="navbar-left" >
+            <a href="index.html" class="brand"><img src="assets/logo.png" alt=""  width="150px" height="150px" style="padding: 20px;"/></a>
+              <!-- <div class="burger" id="burger">
+                 <span class="burger-line"></span>
+                 <span class="burger-line"></span>
+                 <span class="burger-line"></span>
+              </div> -->
+           </section>
+           <section class="navbar-center">
+              <span class="overlay-2"></span>
+              <div class="menu" id="menu">
+                 <div class="menu-header">
+                    <span class="menu-arrow"><i class="bx bx-chevron-left"></i></span>
+                    <span class="menu-title"></span>
+                 </div>
+                 <ul class="menu-inner">
+                    <li class="menu-item"><a href="index.html" class="menu-link">Home</a></li>
+                    <li class="menu-item menu-dropdown">
+                       <span class="menu-link">Products<i class="bx bx-chevron-right"></i></span>
+                       <div class="submenu megamenu megamenu-column-4">
+                        <div class="submenu-inner submenu-inner-navCategories">
+                            <a href="#" class="submenu-link navCategories">
+                               <div class="Category1 my-2">Category1</div>
+                               <div class="Category2 my-2">Category2</div>
+                               <div class="Category3 my-2">Category3</div>
+                               <div class="Category4 my-2">Category4</div>
+                            </a>
+                         </div>
+                          <div class="submenu-inner">
+                             <a href="#" class="submenu-link">
+                                <img src="https://i.ibb.co/kgNX8ks/Product-2.jpg" class="submenu-image" alt="Product">
+                                <span class="submenu-title">Product1</span>
+                             </a>
+                          </div>
+                          <div class="submenu-inner">
+                             <a href="#" class="submenu-link">
+                                <img src="https://i.ibb.co/ZTD2wF6/Product-3.jpg" class="submenu-image" alt="Product">
+                                <span class="submenu-title">Product2</span>
+                             </a>
+                          </div>
+                          <div class="submenu-inner">
+                             <a href="#" class="submenu-link">
+                                <img src="https://i.ibb.co/prb0Vz9/Product-4.jpg" class="submenu-image" alt="Product">
+                                <span class="submenu-title">Product3</span>
+                            </a>
+                          </div>
+                          <div class="submenu-inner">
+                             <a href="#" class="submenu-link">
+                                <img src="https://i.ibb.co/zPJm9jy/Product-5.jpg" class="submenu-image" alt="Product">
+                                <span class="submenu-title">Product4</span>
+                             </a>
+                          </div>
+                       </div>
+                    </li>
+                    <li class="menu-item">
+                        <a href="about.html" class="menu-link">About Us</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="infrastructure.html" class="menu-link">Infrastructure</a>
+                     </li> 
+                     <li class="menu-item">
+                        <a href="csrAndSustainability.html" class="menu-link">CSR & Sustainability</a>
+                     </li>
+                     <li class="menu-item">
+                        <a href="blogs.html" class="menu-link">Blogs</a>
+                     </li>
+                     <li class="menu-item">
+                        <a href="career.html" class="menu-link">Career</a>
+                     </li>
+                    <li class="menu-item">
+                        <a href="contact.html" class="menu-link">contact & Enquiry</a>
+                    </li>
+                 </ul> 
+              </div>
+           </section>
+           <section class="navbar-right">
+              <button class="switch" id="switch">
+              </button>
+           </section>
+           <div class="burger" id="burger">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+         </div>
         </nav>
     </header>
    
@@ -307,7 +304,7 @@
     </div>
 </section>
 
-<footer class="footerSection footer-section" data-scroll-section>
+<footer class="footerSection footer-section" >
     <div class="container container-2">
         <div class="footer-cta pt-5 pb-5">
             <div class="row">
@@ -345,13 +342,11 @@
                 <div class="col-xl-4 col-lg-4 mb-50 py-3">
                     <div class="footer-widget">
                         <div class="footer-logo">
-                            <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" class="img-fluid"
+                            <a href="index.html"><img src="assets/logo.png" class="img-fluid"
                                     alt="logo"></a>
                         </div>
                         <div class="footer-text">
-                            <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor
-                                incididuntut consec tetur adipisicing
-                                elit,Lorem ipsum dolor sit amet.</p>
+                            <p>Rilen Polymer is a trusted company specializing in the production of advanced polymer and plastic products. It focuses on quality, innovation, and durability, making it a distinguished name in the market. All Rilen Polymer products are reliable, eco-friendly, and suitable for both industrial and personal use.</p>
                         </div>
                         <div class="footer-social-icon">
                             <span>Follow us</span>
@@ -404,17 +399,16 @@
             <div class="row">
                 <div class="col-xl-6 col-lg-6 text-center text-lg-left">
                     <div class="copyright-text">
-                        <p>Copyright &copy; 2018, All Right Reserved <a
-                                href="https://codepen.io/anupkumar92/">Anup</a></p>
+                        <p>© 2025 Ralin Polymers Pvt. Ltd. All rights reserved.</p>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
                     <div class="footer-menu">
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Terms</a></li>
-                            <li><a href="#">Privacy</a></li>
-                            <li><a href="#">Policy</a></li>
+                           
+                            <li><a href="#">Terms and conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            
                             <li><a href="#">Contact</a></li>
                         </ul>
                     </div>
@@ -424,13 +418,16 @@
     </div>
 </footer>
 
+
     
  <!-- Footer Section -->
 
 
 <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
-<script src="assets/js/nav.js"></script>
-<script src="assests/js/products.js"></script>
+<!-- <script src="/js/nav.js"></script> -->
+<script src="js/locomotive.js"></script>
+<script src="js/products.js"></script>
+<script src="js/index.js"></script>
 
 <script>
     

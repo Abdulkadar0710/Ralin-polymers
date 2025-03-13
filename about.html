@@ -4,125 +4,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>About - Ralin Polymers</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+   
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="/css/about.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/style2.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/locomotive.css">
     <script src="https://kit.fontawesome.com/YOUR_FA_KIT.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/font.css">
 
 </head>
 
-<body>
-
+<body data-scroll-container> 
+    <header class="header" id="header" >
+        <nav class="navbar ">
+            <!-- container -->
+           <section class="navbar-left" >
+            <a href="index.html" class="brand"><img src="assets/logo.png" alt=""  width="150px" height="150px" style="padding: 20px;"/></a>
+              <!-- <div class="burger" id="burger">
+                 <span class="burger-line"></span>
+                 <span class="burger-line"></span>
+                 <span class="burger-line"></span>
+              </div> -->
+           </section>
+           <section class="navbar-center">
+              <span class="overlay-2"></span>
+              <div class="menu" id="menu">
+                 <div class="menu-header">
+                    <span class="menu-arrow"><i class="bx bx-chevron-left"></i></span>
+                    <span class="menu-title"></span>
+                 </div>
+                 <ul class="menu-inner">
+                    <li class="menu-item"><a href="index.html" class="menu-link">Home</a></li>
+                    <li class="menu-item menu-dropdown">
+                       <span class="menu-link">Products<i class="bx bx-chevron-right"></i></span>
+                       <div class="submenu megamenu megamenu-column-4">
+                        <div class="submenu-inner submenu-inner-navCategories">
+                            <a href="#" class="submenu-link navCategories">
+                               <div class="Category1 my-2">Category1</div>
+                               <div class="Category2 my-2">Category2</div>
+                               <div class="Category3 my-2">Category3</div>
+                               <div class="Category4 my-2">Category4</div>
+                            </a>
+                         </div>
+                          <div class="submenu-inner">
+                             <a href="#" class="submenu-link">
+                                <img src="https://i.ibb.co/kgNX8ks/Product-2.jpg" class="submenu-image" alt="Product">
+                                <span class="submenu-title">Product1</span>
+                             </a>
+                          </div>
+                          <div class="submenu-inner">
+                             <a href="#" class="submenu-link">
+                                <img src="https://i.ibb.co/ZTD2wF6/Product-3.jpg" class="submenu-image" alt="Product">
+                                <span class="submenu-title">Product2</span>
+                             </a>
+                          </div>
+                          <div class="submenu-inner">
+                             <a href="#" class="submenu-link">
+                                <img src="https://i.ibb.co/prb0Vz9/Product-4.jpg" class="submenu-image" alt="Product">
+                                <span class="submenu-title">Product3</span>
+                            </a>
+                          </div>
+                          <div class="submenu-inner">
+                             <a href="#" class="submenu-link">
+                                <img src="https://i.ibb.co/zPJm9jy/Product-5.jpg" class="submenu-image" alt="Product">
+                                <span class="submenu-title">Product4</span>
+                             </a>
+                          </div>
+                       </div>
+                    </li>
+                    <li class="menu-item">
+                        <a href="about.html" class="menu-link">About Us</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="infrastructure.html" class="menu-link">Infrastructure</a>
+                     </li> 
+                     <li class="menu-item">
+                        <a href="csrAndSustainability.html" class="menu-link">CSR & Sustainability</a>
+                     </li>
+                     <li class="menu-item">
+                        <a href="blogs.html" class="menu-link">Blogs</a>
+                     </li>
+                     <li class="menu-item">
+                        <a href="career.html" class="menu-link">Career</a>
+                     </li>
+                    <li class="menu-item">
+                        <a href="contact.html" class="menu-link">contact & Enquiry</a>
+                    </li>
+                 </ul> 
+              </div>
+           </section>
+           <section class="navbar-right">
+              <button class="switch" id="switch">
+              </button>
+           </section>
+           <div class="burger" id="burger">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+         </div>
+        </nav>
+    </header>
 
     <main>
-        <header class="header" id="header">
-            <nav class="navbar ">
-                <!-- container -->
-                <section class="navbar-left">
-                    <a href="#" class="brand">Ralin</a>
-                    <!-- <div class="burger" id="burger">
-             <span class="burger-line"></span>
-             <span class="burger-line"></span>
-             <span class="burger-line"></span>
-          </div> -->
-                </section>
-                <section class="navbar-center">
-                    <span class="overlay-2"></span>
-                    <div class="menu" id="menu">
-                        <div class="menu-header">
-                            <span class="menu-arrow"><i class="bx bx-chevron-left"></i></span>
-                            <span class="menu-title"></span>
-                        </div>
-                        <ul class="menu-inner">
-                            <li class="menu-item"><a href="/index.html" class="menu-link">Home</a></li>
-                            <li class="menu-item menu-dropdown">
-                                <span class="menu-link">Products<i class="bx bx-chevron-right"></i></span>
-                                <div class="submenu megamenu megamenu-column-4">
-                                    <div class="submenu-inner">
-                                        <a href="#" class="submenu-link navCategories">
-                                            <div class="Category1 my-2">Category1</div>
-                                            <div class="Category2 my-2">Category2</div>
-                                            <div class="Category3 my-2">Category3</div>
-                                            <div class="Category4 my-2">Category4</div>
-                                        </a>
-                                    </div>
-                                    <div class="submenu-inner">
-                                        <a href="#" class="submenu-link">
-                                            <img src="https://i.ibb.co/kgNX8ks/Product-2.jpg" class="submenu-image"
-                                                alt="Product">
-                                            <span class="submenu-title">Product Name</span>
-                                        </a>
-                                    </div>
-                                    <div class="submenu-inner">
-                                        <a href="#" class="submenu-link">
-                                            <img src="https://i.ibb.co/ZTD2wF6/Product-3.jpg" class="submenu-image"
-                                                alt="Product">
-                                            <span class="submenu-title">Product Name</span>
-                                        </a>
-                                    </div>
-                                    <div class="submenu-inner">
-                                        <a href="#" class="submenu-link">
-                                            <img src="https://i.ibb.co/prb0Vz9/Product-4.jpg" class="submenu-image"
-                                                alt="Product">
-                                            <span class="submenu-title">Product Name</span>
-                                        </a>
-                                    </div>
-                                    <div class="submenu-inner">
-                                        <a href="#" class="submenu-link">
-                                            <img src="https://i.ibb.co/zPJm9jy/Product-5.jpg" class="submenu-image"
-                                                alt="Product">
-                                            <span class="submenu-title">Product Name</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="menu-item">
-                                <a href="/about.html" class="menu-link">About Us</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="/infrastructure.html" class="menu-link">Infrastructure</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="/csrAndSustainability.html" class="menu-link">CSR & Sustainability</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="/blogs.html" class="menu-link">Blogs</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="/career.html" class="menu-link">Career</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#" class="menu-link">contact & Enquiry</a>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-                <section class="navbar-right">
-                    <button class="switch" id="switch">
-                    </button>
-                </section>
-                <div class="burger" id="burger">
-                    <span class="burger-line"></span>
-                    <span class="burger-line"></span>
-                    <span class="burger-line"></span>
-                </div>
-            </nav>
-        </header>
-        <div class="wrapper">
+       
+       
+
+
+       
 
  
-            <section class="banner-section" data-scroll>
+            <section class="banner-section" >
                 <div class="container-products">
                     <div class="banner-content">
                         <span class="hero-tag">About us</span>
@@ -133,7 +133,7 @@
                     </div>
                 </div>
             </section>
-            <section id="aboutSection" class="aboutSection" data-scroll-section>
+            <section id="aboutSection" class="aboutSection" >
                 <div class="about-section">
                     <div class="about-image">
                         <img src="https://picsum.photos/600/400" alt="Company Image">
@@ -151,12 +151,11 @@
                     </div>
                 </div>
             </section>
-
             <!-- our story -->
-            <section class="aboutSection" data-scroll-section>
+            <section class="aboutSection" data-scroll>
                 <div class="story-section">
                     <div class="story-content">
-                        <h2>OUR STORY</h2>
+                        <h2 >OUR STORY</h2>
                         <p>
                             Our journey started with a passion for innovation and a commitment to excellence. Over the
                             years, we have transformed ideas into reality, creating solutions that make a difference.
@@ -175,15 +174,16 @@
                     </div>
                 </div>
             </section>
+
             <!-- gallery -->
-            <section class="aboutSection" data-scroll-section class="gallery-tab">
+            <section class="aboutSection gallery-tab">
                 <div class="heading">
                     <h1 class="text-center">Gallery</h1>
                 </div>
                 <div class="tabs">
                     <div class="tab active Gbutton" onclick="openTab('photos')">Photos</div>
                     <div class="tab Gbutton" onclick="openTab('videos')">Videos</div>
-                </div>
+                </div> 
 
                 <div id="photos" class="content active gallery">
                     <img src="https://picsum.photos/200/300" alt="Photo 1">
@@ -203,8 +203,8 @@
 
             </section>
             <!-- data-card -->
-            <section class="aboutSection">
-                <h2 class="text-center">Our Achievements</h2>
+            <section>
+                <h1 class="text-center">Our Achievements</h1>
                 <div class="grid-container">
                     <div class="card">
                         <i class="fas fa-check-circle icon"></i>
@@ -229,144 +229,147 @@
                 </div>
             </section>
 
-    <footer class="footerSection footer-section">
-        <div class="container container-2">
-            <div class="footer-cta pt-5 pb-5">
-                <div class="row">
-                    <div class="col-xl-4 col-md-4 mb-30 py-1">
-                        <div style="display: flex" class="single-cta">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="cta-text">
-                                <h4>Find us</h4>
-                                <span>1010 Avenue, sw 54321, chandigarh</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 mb-30 py-1">
-                        <div style="display: flex" class="single-cta">
-                            <i class="fas fa-phone"></i>
-                            <div class="cta-text">
-                                <h4>Call us</h4>
-                                <span>9876543210 0</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 mb-30 py-1">
-                        <div style="display: flex" class="single-cta">
-                            <i class="far fa-envelope-open"></i>
-                            <div class="cta-text">
-                                <h4>Mail us</h4>
-                                <span>mail@info.com</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-content pt-5 pb-5">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-4 mb-50 py-3">
-                        <div class="footer-widget">
-                            <div class="footer-logo">
-                                <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" class="img-fluid"
-                                        alt="logo"></a>
-                            </div>
-                            <div class="footer-text">
-                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor
-                                    incididuntut consec tetur adipisicing
-                                    elit,Lorem ipsum dolor sit amet.</p>
-                            </div>
-                            <div class="footer-social-icon">
-                                <span>Follow us</span>
-                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30 py-3">
-                        <div class="footer-widget">
-                            <div class="footer-widget-heading">
-                                <h3>Useful Links</h3>
-                            </div>
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">about</a></li>
-                                <li><a href="#">services</a></li>
-                                <li><a href="#">portfolio</a></li>
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Our Services</a></li>
-                                <li><a href="#">Expert Team</a></li>
-                                <li><a href="#">Contact us</a></li>
-                                <li><a href="#">Latest News</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50 py-3">
-                        <div class="footer-widget">
-                            <div class="footer-widget-heading">
-                                <h3>Subscribe</h3>
-                            </div>
-                            <div class="footer-text mb-25">
-                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
-                            </div>
-                            <div class="subscribe-form">
-                                <form action="#">
-                                    <input type="text" placeholder="Email Address">
-                                    <button><i class="fab fa-telegram-plane"></i></button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copyright-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                        <div class="copyright-text">
-                            <p>Copyright &copy; 2018, All Right Reserved <a
-                                    href="https://codepen.io/anupkumar92/">Anup</a></p>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                        <div class="footer-menu">
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Terms</a></li>
-                                <li><a href="#">Privacy</a></li>
-                                <li><a href="#">Policy</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+  
 
-    </div>
+            <footer class="footerSection footer-section">
+                <div class="container container-2">
+                    <div class="footer-cta pt-5 pb-5">
+                        <div class="row">
+                            <div class="col-xl-4 col-md-4 mb-30 py-1">
+                                <div style="display: flex" class="single-cta">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div class="cta-text">
+                                        <h4>Find us</h4>
+                                        <span>1010 Avenue, sw 54321, chandigarh</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-4 mb-30 py-1">
+                                <div style="display: flex" class="single-cta">
+                                    <i class="fas fa-phone"></i>
+                                    <div class="cta-text">
+                                        <h4>Call us</h4>
+                                        <span>9876543210 0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-4 mb-30 py-1">
+                                <div style="display: flex" class="single-cta">
+                                    <i class="far fa-envelope-open"></i>
+                                    <div class="cta-text">
+                                        <h4>Mail us</h4>
+                                        <span>mail@info.com</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-content pt-5 pb-5">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 mb-50 py-3">
+                                <div class="footer-widget">
+                                    <div class="footer-logo">
+                                        <a href="index.html"><img src="assets/logo.png" class="img-fluid"
+                                                alt="logo"></a>
+                                    </div>
+                                    <div class="footer-text">
+                                        <p>Rilen Polymer is a trusted company specializing in the production of advanced polymer and plastic products. It focuses on quality, innovation, and durability, making it a distinguished name in the market. All Rilen Polymer products are reliable, eco-friendly, and suitable for both industrial and personal use.</p>
+                                    </div>
+                                    <div class="footer-social-icon">
+                                        <span>Follow us</span>
+                                        <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                        <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                        <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 mb-30 py-3">
+                                <div class="footer-widget">
+                                    <div class="footer-widget-heading">
+                                        <h3>Useful Links</h3>
+                                    </div>
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">about</a></li>
+                                        <li><a href="#">services</a></li>
+                                        <li><a href="#">portfolio</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="#">About us</a></li>
+                                        <li><a href="#">Our Services</a></li>
+                                        <li><a href="#">Expert Team</a></li>
+                                        <li><a href="#">Contact us</a></li>
+                                        <li><a href="#">Latest News</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 mb-50 py-3">
+                                <div class="footer-widget">
+                                    <div class="footer-widget-heading">
+                                        <h3>Subscribe</h3>
+                                    </div>
+                                    <div class="footer-text mb-25">
+                                        <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                                    </div>
+                                    <div class="subscribe-form">
+                                        <form action="#">
+                                            <input type="text" placeholder="Email Address">
+                                            <button><i class="fab fa-telegram-plane"></i></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright-area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                                <div class="copyright-text">
+                                    <p>© 2025 Ralin Polymers Pvt. Ltd. All rights reserved.</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                                <div class="footer-menu">
+                                    <ul>
+                                       
+                                        <li><a href="#">Terms and conditions</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        
+                                        <li><a href="#">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+    
 
 </main>
-    <!-- Pie chart -->
-    <!-- Industries Section -->
 
 
+ 
 
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+<script src="js/locomotive.js"></script>
+
+
+<!-- 
     <script>
         gsap.from(".about-image img", { opacity: 0, scale: 0.8, duration: 3, ease: "power3.out" });
         gsap.from(".about-content", { opacity: 0, x: 100, duration: 1.5, ease: "power3.out", delay: 0.5 });
-    </script>
+    </script> -->
 
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    
+    
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <script src="/js/script.js"></script>
-    <script src="/js/piechart.js"></script>
-    <script src="/js/imageTab.js"></script> 
-    <script src="/js/counter.js"></script>
-    <script src="/js/index.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/imageTab.js"></script> 
+    <script src="js/counter.js"></script>
+    <script src="js/index.js"></script> 
 
 </body>
-
+ 
 </html>

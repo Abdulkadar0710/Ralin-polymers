@@ -1009,3 +1009,9 @@ html.has-scroll-smooth {
 .contact-send-btn i{
     color: var(--relin-white) !important;
 }
+
+.contact-p{
+ max-width: 60%;
+ margin: auto;
+ font-size: 1.25rem;
+}

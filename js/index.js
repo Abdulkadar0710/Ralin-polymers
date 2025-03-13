@@ -1,55 +1,4 @@
 
-// const hamburger = document.getElementById("hamburger");
-
-// hamburger.addEventListener("click",function(){
-//     console.log("Hello");
-//    const nav_items = document.getElementById("nav_items");
-//    nav_items.classList.toggle("show_nav_items");  
-// })
-
-// const crossCategoriesIcon = document.getElementById("crossCategoriesIcon");
-
-// crossCategoriesIcon.addEventListener("click",function(){
-//     console.log("Hello");
-//    const nav_items = document.getElementById("nav_items");
-//    nav_items.classList.toggle("show_nav_items");  
-// })
-
-
-// const products = document.getElementById("products");
-
-// products.addEventListener("click",function(){
-//     if (window.innerWidth <= 992) { 
-//     let productCategoriesContainer = document.getElementById("productCategoriesContainer");
-//     let dropDowon_icon = document.getElementById("dropDowon-icon");
-//     console.log("productCategoriesContainer.style.display: ",productCategoriesContainer.style);
-
-//     if( productCategoriesContainer.style.display == "block" ){
-//      console.log("no");
-//      productCategoriesContainer.style.display = "none"; 
-//      dropDowon_icon.style.transform = "rotate(-90deg)"; 
-//     }
-//     else{
-//         console.log("yes");
-//         productCategoriesContainer.style.display = "block";
-//         dropDowon_icon.style.transform = "rotate(0deg)"; 
-//     }
-// } 
-// }) 
-
-// const nav_items = document.getElementById("nav_items");
-// nav_items.addEventListener("click", function (event) { 
-//     let products = document.getElementById("products"); 
-//     let productCategoriesContainer = document.getElementById("productCategoriesContainer");
-//     let dropDowon_icon = document.getElementById("dropDowon-icon");
-//     if (!products.contains(event.target)) { 
-//         productCategoriesContainer.style.display = "none";
-//         dropDowon_icon.style.transform = "rotate(-90deg)";
-//     }
-// }); 
-
-
-
 let count = document.querySelectorAll(".count")
 let arr = Array.from(count)
 
@@ -95,7 +44,14 @@ const overlay = document.querySelector(".overlay-2");
 // Navbar Menu Toggle Function
 function toggleMenu() {
    menu.classList.toggle("is-active");
-   overlay.classList.toggle("is-active");
+   overlay.classList.toggle("is-active"); 
+
+   if(document.body.style.overflow != "hidden"){
+      document.body.style.overflow = "hidden";
+   }
+   else{
+      document.body.style.overflow = "";
+   }
 }
 
 // Show Mobile Submenu Function
